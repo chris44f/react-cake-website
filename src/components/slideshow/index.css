@@ -1,0 +1,5 @@
+#homepage_image {
+  width: 100vw;
+  height: 72vh;
+  object-fit: contain;
+}

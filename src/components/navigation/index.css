@@ -1,0 +1,66 @@
+.navigation {
+  width: 100vw;
+  background-color: #ffffff;
+  height: 28vh;
+  border-bottom: hsl(168, 72%, 87%) solid 3px;
+  top:0;
+  overflow:visible;
+}
+
+#navlogo {
+  display:block;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+}
+
+.navBar {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.navBar li{
+display: inline-block;
+color: hsl(8, 59%, 41%);
+padding-left: auto;
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+width: 20vw;
+border: none;
+text-align: center;
+line-height: 40px;
+}
+
+#cakes {
+  position:relative;
+}
+
+.navBar li:hover {
+background-color: #ffffff;
+color: #422910;
+}
+
+.dropdowncakes {
+  display:none;
+  position:absolute;
+  padding:0;
+  margin:0;
+  background-color: #ffffff;
+  border: brown;
+  color: brown;
+}
+
+#cakes:hover .dropdowncakes {
+  display: block;
+  z-index: 2;
+}
+
+.dropdowncakes li {
+  max-width: 100%;
+}
+
+.dropdowncakes li:hover{
+  text-decoration: underline;
+}

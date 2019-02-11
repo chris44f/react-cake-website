@@ -1,0 +1,35 @@
+.textBody {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: future-pt, helvetica, arial, sans-serif;
+  color: #642e07;
+  line-height: 28px;
+}
+
+.textBody h1,h2 {
+  font-weight: lighter;
+  padding-bottom: 14px;
+}
+
+#welcome_img {
+  width: 25vw;
+  height: 60vh;
+  object-fit: cover;
+  float: left;
+  padding-right: 2vw;
+}
+
+.quoteImageR {
+  display: inline-flex;
+}
+
+.quoteImageR img {
+  max-width: 15vw;
+  max-height: 20vh;
+  min-height: 20vh;
+  min-width: 15vw;
+  object-fit: contain;
+  float: right;
+  padding-left: 2vw;
+  padding-top: 2vw;
+}

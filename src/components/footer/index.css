@@ -1,0 +1,16 @@
+
+.footer {
+  width: 100vw;
+  background-color: #ffffff;
+  height: 15vh;
+  border-top: hsl(168, 72%, 87%) solid 3px;
+}
+
+.footer_information {
+color: #642e07;
+right: 0;
+border: none;
+text-align: right;
+line-height: 40px;
+margin-right: 1vw;
+}
