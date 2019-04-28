@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../../components/footer'
-import Navigation from '../../components/navigation'
 import './index.css'
 import WelcomeImg from '../../assets/welcome.jpg'
 import Quote from '../../components/quote'
@@ -8,7 +6,7 @@ import EbonyImg from '../../assets/ebony.jpg'
 
 const customerQuotes = [
   {
-    quote: "This is a sample quote",
+    quote: `"This is a sample quote"`,
     source: "Sample Customer",
     id: "customerQuote"
   },
@@ -22,12 +20,11 @@ const customerQuotes = [
     id: "ownerQuoteWelcome"
   }]
 
-class Main extends Component {
+class AboutUs extends Component {
   render(){
     return(
       <div>
-        <Navigation />
-        <div className="textBody">
+        <div className="text-body">
           <Quote
             id={customerQuotes[0].id}
             source={customerQuotes[0].source}
@@ -66,7 +63,7 @@ class Main extends Component {
             </p>
           </div>
           <hr />
-          <span className="quoteImageR">
+          <span className="quote-image--R">
             <Quote
               id={customerQuotes[1].id}
               source={customerQuotes[1].source}
@@ -75,10 +72,9 @@ class Main extends Component {
             <img src={EbonyImg} id="welcome_owner_img" />
           </span>
         </div>
-        <Footer />
       </div>
     )
   }
 }
 
-export default Main
+export default AboutUs

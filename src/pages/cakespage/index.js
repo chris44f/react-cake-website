@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../../components/footer'
-import Navigation from '../../components/navigation'
 import Collections from '../../components/collections'
 import CroqImg from '../../assets/croq.jpg'
 import TeaPartyImg from '../../assets/teaparty.jpg'
@@ -31,12 +29,12 @@ const collections = [
   },
 ]
 
-class Main extends Component {
+class Cakes extends Component {
   render(){
     return(
-      <div>
-        <Navigation />
+      <div className="collections-wrapper">
         <h1>Cake Collections</h1>
+        <div className="cake-collections">
         {collections.map((collection)=>(
           <Collections
             src={collection.src}
@@ -44,6 +42,7 @@ class Main extends Component {
             many={collection.many}
           />
         ))}
+        </div>
         <div>
           <img src="" id="" />
           <p>The Wooden Dove Cake Company also offers an assortment of favours
@@ -52,10 +51,9 @@ class Main extends Component {
           </p>
           <img src="" id="" />
         </div>
-        <Footer />
       </div>
     )
   }
 }
 
-export default Main
+export default Cakes

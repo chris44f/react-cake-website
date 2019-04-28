@@ -1,0 +1,35 @@
+.contact-wrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: future-pt, helvetica, arial, sans-serif;
+  color: #642e07;
+}
+
+.contact-text {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.contact-text h1 {
+  font-weight: lighter;
+}
+
+.cake-form {
+  padding: 5%;
+  width: 60%;
+  border: 1px solid #eaeaea;
+  box-shadow: 3px 3px 3px 3px #f8f8f8;
+  margin: 5% 20% 10% 20%;
+}
+
+.cake-form input {
+  background-color: #f8f8f8;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  width: 100%;
+  height: 28px;
+}
+
+#message {
+  height: 84px
+}

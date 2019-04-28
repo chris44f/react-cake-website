@@ -15,12 +15,26 @@
   padding:0;
 }
 
-.navBar {
+.nav-bar {
   margin-left: 5vw;
   margin-right: 5vw;
 }
 
-.navBar li{
+.nav-bar_link li{
+display: inline-block;
+color: hsl(8, 59%, 41%);
+padding-left: auto;
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+width: 20vw;
+border: none;
+text-align: center;
+line-height: 40px;
+text-decoration: none;
+}
+
+.nav-bar li{
 display: inline-block;
 color: hsl(8, 59%, 41%);
 padding-left: auto;
@@ -37,12 +51,12 @@ line-height: 40px;
   position:relative;
 }
 
-.navBar li:hover {
+.nav-bar_link li:hover {
 background-color: #ffffff;
 color: #422910;
 }
 
-.dropdowncakes {
+.dropdown-cakes {
   display:none;
   position:absolute;
   padding:0;
@@ -52,15 +66,15 @@ color: #422910;
   color: brown;
 }
 
-#cakes:hover .dropdowncakes {
+#cakes:hover .dropdown-cakes {
   display: block;
   z-index: 2;
 }
 
-.dropdowncakes li {
+.dropdown-cakes li {
   max-width: 100%;
 }
 
-.dropdowncakes li:hover{
+.dropdown-cakes li:hover{
   text-decoration: underline;
 }

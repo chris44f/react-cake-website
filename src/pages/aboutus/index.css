@@ -1,4 +1,4 @@
-.textBody {
+.text-body {
   margin-left: 15%;
   margin-right: 15%;
   font-family: future-pt, helvetica, arial, sans-serif;
@@ -6,7 +6,7 @@
   line-height: 28px;
 }
 
-.textBody h1,h2 {
+.text-body h1,h2 {
   font-weight: lighter;
   padding-bottom: 14px;
 }
@@ -19,11 +19,11 @@
   padding-right: 2vw;
 }
 
-.quoteImageR {
+.quote-image--R {
   display: inline-flex;
 }
 
-.quoteImageR img {
+.quote-image--R img {
   max-width: 15vw;
   max-height: 20vh;
   min-height: 20vh;

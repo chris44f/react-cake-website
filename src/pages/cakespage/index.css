@@ -1,0 +1,19 @@
+.collections-wrapper {
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+h1 {
+  font-family: future-pt, helvetica, arial, sans-serif;
+  color: #642e07;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.cake-collections {
+  display:grid;
+  grid-template: 60vh 60vh / auto auto;
+  justify-content: center;
+  grid-row-gap: 5vh;
+  grid-column-gap: 10vw;
+}
