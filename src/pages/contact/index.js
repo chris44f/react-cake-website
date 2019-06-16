@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './index.css'
+import emailjs from 'emailjs-com'
 
 class Contact extends Component {
 
@@ -20,6 +21,15 @@ class Contact extends Component {
     this.setState({ emailAddress: e })
   }
 
+  handleClick = () => {
+    emailjs.sendForm('mailjet', 'cake-form', 'new_cake')
+    .then(function(response) {
+   console.log('SUCCESS!', response.status, response.text);
+}, function(error) {
+   console.log('FAILED...', error);
+});
+  }
+
   render(){
     return(
       <div className="contact-wrapper">
@@ -30,7 +40,7 @@ class Contact extends Component {
           Feel free to either use the form below or contact us via the details at
           the bottom of the page.</p>
         </div>
-        <form className="cake-form">
+        <form className="cake-form" name="new_cake">
           Full Name:
           <br />
           <input
@@ -63,7 +73,7 @@ class Contact extends Component {
           <br />
           <br />
           <br />
-          <button>Submit</button>
+          <button onClick={()=>this.handleClick()}>Submit</button>
         </form>
       </div>
     )

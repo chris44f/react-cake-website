@@ -1,5 +1,58 @@
-#homepage_image {
+.slideshow {
   width: 100vw;
-  height: 72vh;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding-left: 0
+}
+
+.slideshow img {
   object-fit: contain;
+  height: 72vh;
+}
+
+.button-next {
+  background-color: #000000;
+  opacity: 0;
+  height: 99%;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none
+}
+
+.button-next:hover {
+  opacity: 0.4;
+}
+
+.button-prev {
+  background-color: #000000;
+  opacity: 0;
+  height: 99%;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none
+}
+
+
+.button-prev:hover {
+  opacity: 0.4;
+}
+
+.carousel-wrapper {
+  position: relative
 }

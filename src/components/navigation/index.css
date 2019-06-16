@@ -1,7 +1,6 @@
 .navigation {
   width: 100vw;
   background-color: #ffffff;
-  height: 28vh;
   border-bottom: hsl(168, 72%, 87%) solid 3px;
   top:0;
   overflow:visible;
@@ -18,9 +17,11 @@
 .nav-bar {
   margin-left: 5vw;
   margin-right: 5vw;
+  position: relative;
+  display: block
 }
 
-.nav-bar_link li{
+.nav-bar_link a{
 display: inline-block;
 color: hsl(8, 59%, 41%);
 padding-left: auto;
@@ -51,7 +52,7 @@ line-height: 40px;
   position:relative;
 }
 
-.nav-bar_link li:hover {
+.nav-bar_link a:hover {
 background-color: #ffffff;
 color: #422910;
 }

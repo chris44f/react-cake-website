@@ -9,14 +9,14 @@ class Navigation extends Component {
       <div className="navigation">
         <img src={Logo} id="navlogo" />
         <ul className="nav-bar">
-          <li>
-            <Link to ='/' className="nav-bar_link">Home</Link>
+          <li className="nav-bar_link">
+            <Link className="nav-bar_link" to ='/'>Home</Link>
           </li>
-          <li>
-            <Link to='/aboutus' className="nav-bar_link">About Us</Link>
+          <li className="nav-bar_link">
+            <Link to='/aboutus'>About Us</Link>
           </li>
-          <li id="cakes">
-            <Link to='/cakes' className="nav-bar_link">Cakes</Link>
+          <li id="cakes" className="nav-bar_link">
+            <Link to='/cakes'>Cakes</Link>
             <ul className="dropdown-cakes">
               <li><a>Buttercream Cakes</a></li>
               <li><a>Le Croquembouche</a></li>
@@ -24,8 +24,8 @@ class Navigation extends Component {
               <li><a>Macaron Towers</a></li>
             </ul>
           </li>
-          <li>
-            <Link to='/contact' className="nav-bar_link">Contact</Link>
+          <li className="nav-bar_link">
+            <Link to='/contact'>Contact</Link>
           </li>
         </ul>
       </div>
