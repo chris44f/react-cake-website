@@ -10,7 +10,7 @@ class Navigation extends Component {
         <img src={Logo} id="navlogo" />
         <ul className="nav-bar">
           <li className="nav-bar_link">
-            <Link className="nav-bar_link" to ='/'>Home</Link>
+            <Link to ='/'>Home</Link>
           </li>
           <li className="nav-bar_link">
             <Link to='/aboutus'>About Us</Link>
